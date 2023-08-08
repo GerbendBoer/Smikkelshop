@@ -1,0 +1,19 @@
+.buttons {
+
+    a {
+        color: $blue-color;
+        padding: 10px 7px;
+        border: 2px solid $blue-color;
+        border-radius: 5px;
+        text-decoration: none;
+        font-weight: 600;
+        transition: all 0.3s ease-in-out;
+    
+        &:hover {
+            background-color: $blue-color;
+            color: $white-color;
+        }
+    }
+
+}
+

@@ -1,0 +1,130 @@
+.nav {
+    padding: 20px;
+    background-color: $white-color;
+
+    &__inner {
+        display: flex;
+        margin: auto;
+        max-width: 1140px;
+        justify-content: space-between;
+        
+        &--menu {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+
+            a {
+                color: $text-color;
+                font-size: 18px;
+                text-decoration: none;
+                transition: color 0.2s ease-in-out;
+    
+                &:hover {
+                    color: $blue-color;
+                }
+            }
+    
+            #active {
+                color: $blue-color;
+            }
+
+        }
+    }
+}
+
+.hero {
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+
+    &__inner {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &::before {
+            z-index: 2;
+            content: '';
+            position: absolute;
+            background-color: rgba($color: #000000, $alpha: 0.3);
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+
+        img {
+            z-index: 1;
+            position: absolute;
+            top: -100px;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        h1 {
+            color: $white-color;
+            z-index: 3;
+        }
+
+    }
+
+}
+
+.content {
+    padding: 50px 0;
+    min-height: 400px;
+
+    &__inner {
+        max-width: 1140px;
+        margin: auto;
+
+        &--prijslijst {
+            border-spacing: 0 2em;
+
+            td.image {
+                width: 20%;
+
+                img {
+                    height: 130px;
+                    width: 200px;
+                    object-fit: cover;
+                }
+            }
+
+            td.info {
+                width: 60%;
+                vertical-align: top;
+
+                :nth-child(1) {
+                    font-weight: 600;
+                }
+
+                :nth-child(2) {
+                    margin: 10px 0;
+                }
+
+                :nth-child(3) {
+                    color: $blue-color;
+                }
+            }
+
+            td.buttons {
+                text-align: center;
+                padding: 0 20px;
+                width: 20%;
+            }
+        }
+    }
+}
+
+.footer {
+    color: $white-color;
+    padding: 20px; 
+    background: $blue-color;
+
+    &__inner {
+        max-width: 1140px;
+        margin: auto;
+    }
+}
