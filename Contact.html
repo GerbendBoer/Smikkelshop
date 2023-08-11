@@ -32,10 +32,33 @@
 
     <div class="content">
         <div class="content__inner">
-
-            <!-- Bouw hier je formulier -->
-
-            
+            <form action="Check.html" method="post">
+                <label for="voornaam">Voornaam</label>
+                <input type="text" id="voornaam" name="voornaam" required placeholder="Vul hier uw voornaam in">
+                <label for="achternaam">Achternaam</label>
+                <input type="text" id="achternaam" name="achternaam" required placeholder="Vul hier uw achternaam in">
+                <label for="emailadres">Emailadres</label>
+                <input type="Text" id="emailadres" name="emailadres" required placeholder="Vul hier uw emailadres in">
+                <label for="telefoonnummer">Telefoonnummer</label>
+                <input type="text" id="telefoonnummer" name="telefoonnummer" pattern="[0-9]{+}" placeholder="06-12345678">
+                <label for="productkeuze">Kies uw Product</label>
+                <select name="productkeuze" id="productkeuze" required>
+                    <option value="cupcakes">Cupcakes(6)</option>
+                    <option value="pie">Pie</option>
+                    <option value="cake">Cake</option>
+                </select>
+                <div class="radioleft">
+                    <input type="radio" id="ophalen" name="verzendenoptie" value="ophalen">
+                    <label for="ophalen">Ophalen</label>
+                    <br>
+                    <input type="radio" id="verzenden" name="verzendenoptie" value="verzenden">
+                    <label for="verzenden">Verzenden</label>
+                </div>
+                <br>
+                <label for="opmerkingen">Opmerkingen?</label>
+                <textarea cols="10" rows="5" id="opmerkingen"></textarea>
+                <input type="submit" value="Versturen">
+            </form>
         </div>
     </div>
 

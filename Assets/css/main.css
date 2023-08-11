@@ -124,6 +124,9 @@ p {
   width: 200px;
   object-fit: cover;
 }
+.radioleft {
+  text-align: left;
+}
 .content__inner--prijslijst td.info {
   width: 60%;
   vertical-align: top;
